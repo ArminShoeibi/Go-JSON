@@ -21,4 +21,13 @@ func main() {
 	}
 
 	fmt.Println(p)
+
+	kai := Person{
+		FirstName: "Kai",
+		LastName:  "Greene",
+	}
+
+	byteSlice, err := json.Marshal(kai)
+
+	fmt.Println(string(byteSlice))
 }
